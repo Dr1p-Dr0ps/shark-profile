@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>さめと自己紹介</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>PROFILE</h1>
+    <p>好きなものと、自分のこと。</p>
+  </header>
+
+  <main>
+    <section class="profile-header" aria-labelledby="name">
+      <img class="profile-icon" src="images/icon.png" alt="プロフィールアイコン" width="120" height="120">
+      <div>
+        <h2 id="name">DripDrop</h2>
+        <p>大学生</p>
+        <p class="role">3D Creator / Student</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title">About me</h2>
+      <div class="about-list">
+        <div class="about-item">
+          <h3>好きなもの</h3>
+          <ul>
+            <li>ゲーム</li>
+            <li>音楽</li>
+            <li>本</li>
+            <li>コーヒー</li>
+            <li>かわいいもの</li>
+          </ul>
+        </div>
+        <div class="about-item">
+          <h3>苦手なもの</h3>
+          <ul>
+            <li>早起き</li>
+            <li>人混み</li>
+          </ul>
+        </div>
+        <div class="about-item">
+          <h3>趣味</h3>
+          <ul>
+            <li>お散歩</li>
+            <li>勉強</li>
+            <li>軽いお絵描き</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="personality" aria-labelledby="personality-title">
+      <h2 class="section-title" id="personality-title">性格のこと</h2>
+      <p>16Personalitiesの結果は INTP-T でした。</p>
+      <p>好奇心が強く、物事をじっくり考えるタイプ。らしい…</p>
+      <a class="detail-link" href="mbti.html">診断結果をもう少し見る →</a>
+    </section>
+
+    <section class="shark-area" aria-labelledby="shark-title">
+      <h2 class="section-title" id="shark-title">ひとこと、さめ</h2>
+      <p>さめを押すと、ランダムにしゃべります。</p>
+      <p class="shark-message" aria-live="polite" aria-atomic="true">さめを押してみてね</p>
+      <button class="shark-button" type="button" aria-label="さめに話しかける">
+        <img src="images/same.png" alt="" width="200" height="200">
+      </button>
+      <p class="click-count">話しかけた回数：<span id="count">0</span>回</p>
+    </section>
+  </main>
+
+  <footer><p>さめと自己紹介</p></footer>
+</body>
+</html>
